@@ -1,0 +1,21 @@
+local function createMenuFrame()
+    local menuFrame = Instance.new("Frame")
+    menuFrame.Parent = game.Players.LocalPlayer.PlayerGui
+    menuFrame.Size = UDim2.new(0, 200, 0, 400)
+    menuFrame.Position = UDim2.new(0, 10, 0, 10)
+    menuFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    return menuFrame
+end
+
+local menu = createMenuFrame()
+
+local function createWindow(position, size)
+    local windowFrame = Instance.new("Frame")
+    windowFrame.Parent = game.Players.LocalPlayer.PlayerGui
+    windowFrame.Size = size
+    windowFrame.Position = position
+    windowFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    return windowFrame
+end
+
+local window = createWindow(UDim2.new(0.5, -100, 0.5, -100), UDim2.new(0, 200, 0, 200))
